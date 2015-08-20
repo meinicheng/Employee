@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_8_corner_1"
+    android:orientation="vertical" >
+
+    <!-- android:background="@xml/list_choose_selector" -->
+    <!-- android:background="@drawable/bg_white_selector" -->
+
+    <TextView
+        android:id="@+id/dialog_post_order_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/btn_choose_pressed" />
+
+    <TextView
+        android:id="@+id/dialog_post_order_submit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/submit"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/btn_choose_pressed" />
+
+    <TextView
+        android:id="@+id/dialog_post_order_flush_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/flush"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/btn_choose_pressed" />
+
+    <TextView
+        android:id="@+id/dialog_post_order_cancle_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_end_8_corner_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textSize="17sp" />
+    <!-- android:background="@drawable/back_behind_listtext_style" -->
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_view_reset_pwd_editLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe5e5e5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_view_title" />
+
+    <ScrollView
+        android:id="@+id/activity_view_reset_pwd_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/old_pwd"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/activity_view_reset_pwd_edt_old_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="3"
+                    android:background="@drawable/textbox"
+                    android:hint="@string/input_old_pwd"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/new_pwd"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/activity_view_reset_pwd_edt_new_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="3"
+                    android:background="@drawable/textbox"
+                    android:hint="@string/input_new_pwd"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/repeat_pwd"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/activity_view_reset_pwd_edt_repeat_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="3"
+                    android:background="@drawable/textbox"
+                    android:hint="@string/input_repeat_pwd"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <!-- android:background="@drawable/back_submit_style" -->
+
+            <Button
+                android:id="@+id/activity_view_reset_pwd_bt_info_save"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/blue_btn_selector"
+                android:text="@string/btn_save"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/commont_btn_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

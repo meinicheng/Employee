@@ -1,0 +1,90 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in D:\Program Files\Android\sdk/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the proguardFiles
+# directive in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-optimizationpasses 5                                                           # 指定代码的压缩级别
+-dontuse mixed case class names                                                     # 是否使用大小写混合
+-dontskipnonpubliclibraryclasses                                                # 是否混淆第三方jar
+-dontpreverify                                                                  # 混淆时是否做预校验
+-verbose                                                         # 混淆时是否记录日志
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*        # 混淆时所采用的算法
+
+-keep public class * extends android.app.Activity                               # 保持哪些类不被混淆
+-keep public class * extends android.app.Application                            # 保持哪些类不被混淆
+-keep public class * extends android.app.Service                                # 保持哪些类不被混淆
+-keep public class * extends android.content.BroadcastReceiver                  # 保持哪些类不被混淆
+-keep public class * extends android.content.ContentProvider                    # 保持哪些类不被混淆
+-keep public class * extends android.app.backup.BackupAgentHelper               # 保持哪些类不被混淆
+-keep public class * extends android.preference.Preference                      # 保持哪些类不被混淆
+-keep public class com.android.vending.licensing.ILicensingService              # 保持哪些类不被混淆
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.support.v4.**
+
+# 保持 native 方法不被混淆
+-keep classes with member names class * {
+    native <methods>;
+}# 保持自定义控件类不被混淆
+-keep classes with members class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+# 保持自定义控件类不被混淆
+-keep classes with members class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+ # 保持自定义控件类不被混淆
+-keep class members class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+# 保持枚举 enum 类不被混淆
+-keep class members enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+ # 保持 Parcelable 不被混淆
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;}
+
+-keep public interface com.umeng.socialize.**
+-keep public interface com.umeng.socialize.sensor.**
+-keep public interface com.umeng.scrshot.**
+
+-keep public class com.umeng.socialize.* {*;}
+-keep class com.umeng.scrshot.**
+-keep class com.umeng.socialize.sensor.**
+
+-keep class com.umeng.**;
+-keep class com.baidu.frontia.**;
+-keep class com.baidu.android.**;
+#-dontwarn com.umeng.**
+#-dontwarn com.baidu.frontia.**
+#-dontwarn com.baidu.android.**
+
+-libraryjars libs/AMap_Services_V2.4.0.jar
+-libraryjars libs/android-async-http-1.4.5.jar
+-libraryjars libs/Android_Location_V1.3.2.jar
+-libraryjars libs/BaiduLBS_Android.jar
+-libraryjars libs/jpush-sdk-release1.7.5.jar
+-libraryjars libs/pushservice-4.0.0.jar
+-libraryjars libs/umeng-analytics-v5.4.1.jar
+-libraryjars libs/umeng-update-v2.5.0.jar
+-libraryjars libs/Universal-Image-Loader1.9.4.jar
+
+

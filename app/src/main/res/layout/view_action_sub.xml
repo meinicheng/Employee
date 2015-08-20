@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_sub_action"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- <Button
+        android:id="@+id/btnDriverEdit4"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/back_submit_style"
+        android:onClick="executeAction"
+        android:text="签收"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDriverEdit5"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/back_submit_style"
+        android:onClick="executeAction"
+        android:text="拒签"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDriverEdit6"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/back_submit_style"
+        android:onClick="executeAction"
+        android:text="客户不在"
+        android:textColor="@android:color/white" /> -->
+
+</LinearLayout>

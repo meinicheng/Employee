@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_report_query_container_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/activity_report_query_capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/activity_report_query_fl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nav" >
+
+        <ImageView
+            android:id="@+id/activity_report_query_img_back"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_details_gohome" />
+
+        <TextView
+            android:id="@+id/activity_report_query_tv_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/menuScan"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_report_query_ll_input_bar_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/activity_report_query_fl_title_bar"
+        android:background="@drawable/bg_line"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" >
+
+        <EditText
+            android:id="@+id/activity_report_query_et_bar_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@drawable/bg_edittext"
+            android:paddingLeft="3dp"
+            android:textColorHint="@color/blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_report_query_capture_crop_layout"
+        android:layout_width="255dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/activity_report_query_ll_input_bar_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/scan_capture"
+        android:contentDescription="@string/app_name" >
+
+        <ImageView
+            android:id="@+id/activity_report_query_capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/scan_line"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_report_query_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/activity_report_query_capture_crop_layout"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_btn_selector"
+        android:onClick="completeScan"
+        android:text="@string/query"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

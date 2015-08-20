@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe5e5e5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+   <include layout="@layout/common_view_title"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/activity_system_setting_lvSetting"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/blue_btn_selector"
+            android:onClick="existSystem"
+            android:text="@string/exit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

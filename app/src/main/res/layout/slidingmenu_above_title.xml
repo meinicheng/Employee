@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@drawable/nav" >
+
+    <LinearLayout
+        android:id="@+id/sliding_menu_ll_above_toHome"
+        android:layout_width="@dimen/title_height"
+        android:layout_height="@dimen/title_height"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/dishes_btn_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sliding_menu_tv_above_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="车队定位"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/sliding_menu_lay_above_image"
+        android:layout_width="@dimen/title_height"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/home_btn2_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <!-- android:background="@drawable/back_submit_style" -->
+        <!-- android:background="@drawable/back_behind_listitem_style" -->
+        <!--
+         android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+        -->
+
+        <Button
+            android:id="@+id/sliding_menu_bt_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fragment_draft_box_no_record_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/fragment_draft_box_imgNoRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_null" />
+
+        <TextView
+            android:id="@+id/fragment_draft_box_tvNoRecordMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/temporarily_not_found_related_records"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp" />
+    </LinearLayout>
+ <!--    <ListView
+        android:id="@+id/fragment_draft_box_plv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:listSelector="#0fff"
+        android:scrollbars="none" /> -->
+    <com.sdbnet.hywy.employee.ui.widget.RTPullListView
+        android:id="@+id/fragment_draft_box_plv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:listSelector="#0fff"
+        android:scrollbars="none" />
+    <!-- <include layout="@layout/view_record_null" /> -->
+
+</RelativeLayout>

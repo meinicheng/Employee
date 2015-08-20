@@ -1,0 +1,436 @@
+<resources>
+
+    <string name="app_name">货运无忧终端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- 侧边栏按钮 -->
+    <string name="button_setting">设置</string>
+    <string name="button_feedback">反馈</string>
+    <string name="button_about">关于</string>
+    <string name="button_customService">联系客服</string>
+
+    <!-- 侧边栏菜单 -->
+    <string name="menuHomepage">首页</string>
+    <string name="menuOrder">我的派单</string>
+    <string name="menuInfo">个人资料</string>
+    <string name="menuScan">订单扫描</string>
+    <string name="menuDraftBox">草稿箱</string>
+    <string name="menuDraftBox_x">草稿箱(%d)</string>
+    <string name="menu_report_execption">异常申报</string>
+    <string name="menuTransfer">业务移交</string>
+    <!-- <string name="menuStatus">状态变更</string> -->
+    <string name="menuCode">我的二维码</string>
+
+    <!-- 登录 -->
+    <string name="user_title">货运无忧</string>
+    <string name="user_cancel">取消</string>
+    <string name="user_remember">记住密码</string>
+    <string name="user_enter">立即登录</string>
+    <string name="user_user_empty">用户名不能为空!</string>
+    <string name="user_pwd_empty">密码不能为空!</string>
+    <string name="user_login_prompt">请先登录</string>
+    <string name="user_login_enter_key">请先请输入密钥</string>
+
+    <!-- 上拉下拉 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="press_again_exit">再按一次退出至后台</string>
+
+    <!-- 提示 -->
+    <string name="httpError">网络不可用，请检查您的网络连接</string>
+    <string name="httpisNull">网络连接超时，请检查您的网络连接</string>
+    <string name="user_center_error">请先登录再进入用户中心</string>
+    <string name="user_tel">请输入电话号码</string>
+    <string name="user_verifycode">请输入验证码</string>
+    <string name="user_username">请输入用户名</string>
+    <string name="user_pwd">请输入密码</string>
+    <string name="user_getcode_error">获取验证码错误!</string>
+    <string name="user_login_error">用户名或者密码错误!</string>
+    <string name="user_loginKey_error">错误密钥!</string>
+    <string name="user_loginInfo_error">获取信息失败，\n请尝试重新登录。</string>
+    <string name="about_us">关于我们</string>
+    <string name="about_title">名称:途乐</string>
+    <string name="about_intro">[应用简介]\n货运无忧司机端是一款。。。</string>
+    <string name="about_story">[应用故事]\n货运无忧的理念是。。。</string>
+    <string name="about_tontact">联系我们：</string>
+    <string name="about_sina">微博</string>
+    <string name="about_weixin">微信</string>
+    <string name="is_validation">正在验证&#8230;</string>
+    <string name="tip_work">亲，只有上班了才能操作哦</string>
+
+    <!-- 用户反馈 -->
+    <string name="feedback_submit">提交</string>
+    <string name="feedback_input_content">请输入您的反馈意见</string>
+    <string name="feedback_back">返回</string>
+    <string name="user_logout">注销</string>
+
+    <!-- 用户中心 -->
+    <string name="user_center_get_info_error">获取信息错误</string>
+    <string name="user_center_my_Collect">我的收藏</string>
+    <string name="user_center_my_Intro">个人简介</string>
+    <string name="user_center_exit">退出功能</string>
+    <string name="user_center_e_coin">e币:%1$s</string>
+    <string name="user_center_e_reputation">e望:%1$s</string>
+
+    <!-- 二维码扫描 -->
+    <string name="scan_tip">请将二维码置于取景框内扫描</string>
+    <string name="scan_retry">二维码扫描出错啦,请重新扫描</string>
+    <string name="scan_title">扫一扫</string>
+
+    <!-- 搜索栏 -->
+    <string name="title_search_hint">请输入字符检索</string>
+
+    <!-- 省份选择 -->
+    <string name="add_province">省　份：</string>
+    <string name="add_city">城　市：</string>
+    <string name="add_street">区　县：</string>
+
+    <!-- 下拉刷新、上拉加载更多 -->
+    <string name="get_more">获取更多</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="refreshing">正在刷新&#8230;</string>
+    <string name="updating">最近更新：</string>
+    <string name="image_url">Image Url</string>
+
+    <!-- 订单扫描 -->
+
+    <string name="barcode_hint"> 可手动输入%1$s号</string>
+    <string name="barcode_record">查看已添加%1$s</string>
+    <string name="barcode_total">共扫描%1$s数(最多100条)：%2$d</string>
+    <string name="add">添加</string>
+    <string name="query">查询</string>
+    <string name="view_has_add_order">查看已添加订单</string>
+    <string name="next">下一步</string>
+    <!-- 已扫订单列表 -->
+    <string name="scanned_barcode">已扫%s列表</string>
+
+    <!-- xml界面title -->
+    <string name="old_pwd">当前密码</string>
+    <string name="new_pwd">修改密码</string>
+    <string name="repeat_pwd">重复密码</string>
+    <string name="input_old_pwd">请输入当前密码</string>
+    <string name="input_new_pwd">请输入您的新密码</string>
+    <string name="input_repeat_pwd">请再次输入您的新密码</string>
+    <string name="btn_save">保存</string>
+    <!-- zhangyu 添加修改 -->
+    <string name="please_later_ellipsis">请稍后&#8230;</string>
+    <string name="not_get_gps_info">未获取到GPS信息</string>
+    <string name="network_connect_timeout">网络连接超时</string>
+    <string name="logo_msg">© 上丁网络    版权所属</string>
+    <string name="being_updated_please_later">正在更新，请稍候</string>
+    <string name="downloading_update_please_later_ellipsis">正在下载更新,请稍后&#8230;</string>
+    <string name="download_fail">下载失败</string>
+    <string name="download_success">下载成功</string>
+    <string name="have_read_and_agreed_to_the_deal">&#060;a href=\&#034;http&#058;//182.18.31.50/HJSERVER\&#034;&#062;已阅读并同意该协议&#060;&#047;a&#062;</string>
+    <string name="confirm_tip">确认提示</string>
+    <string name="is_open_gps">是否开启高精度GPS？</string>
+    <string name="is_open_network">是否打开网络设置？</string>
+    <string name="work_status_changed">工作状态修改成功</string>
+    <string name="company_information">公司资料</string>
+    <string name="company_name_colon">公司名：</string>
+    <string name="contact_colon">联系人：</string>
+    <string name="company_introduction_colon">公司介绍：</string>
+    <string name="company_address_colon">公司地址：</string>
+    <string name="company_logo_colon">公司LOGO：</string>
+    <string name="website_colon">网址：</string>
+    <string name="enterprise_email_colon">企业邮箱：</string>
+    <string name="project_name_colon">项目名称：</string>
+    <string name="user_information">用户资料</string>
+    <string name="user_name_colon">用户姓名：</string>
+    <string name="sex_colon">性别：</string>
+    <string name="phone_colon">电话：</string>
+    <string name="plate_number_colon">车牌号：</string>
+    <string name="car_modle_colon">车型：</string>
+    <string name="car_length_colon">车长：</string>
+    <string name="load_colon">载重：</string>
+    <string name="edit">编辑</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="m">米</string>
+    <string name="t"> 吨</string>
+    <string name="data_editor_success">资料编辑成功</string>
+    <string name="most_choose_num_images">最多选择%d张图片</string>
+    <string name="data_editor">资料编辑</string>
+    <string name="please_select_vehicle_model">请选择车型</string>
+    <string name="please_select_vehicle_length">请选择车长</string>
+    <string name="please_select_vehicle_load">请选择载重</string>
+    <string name="eidt_info_tip_msg">当前信息未发生变化，请修改后再提交</string>
+    <string name="save">保存</string>
+    <string name="ok">完成</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="no_find_sd">未发现SD卡</string>
+    <string name="select_album">选择相册</string>
+    <string name="update_remind">更新提醒</string>
+    <string name="beta_tip">货运无忧客户端Beta版试用截止，请更新为正式版本，点击确定前往下载</string>
+    <string name="umeng_update_tip_msg">非常抱歉，您需要更新应用才能继续使用</string>
+    <!-- SystemSet(SystemSettingActivity) -->
+    <string name="please_input_you_current_pwd">请输入您的当前密码</string>
+    <string name="please_input_you_new_pwd">请输入您的新密码</string>
+    <string name="please_again_input_you_new_pwd">请重复输入您的新密码</string>
+    <string name="please_input_pwd_length_6">请输入密码长度大于6位的密码</string>
+    <string name="please_input_pwd_length_13">请输入密码长度小于13位的密码</string>
+    <string name="current_pwd_error">当前密码输入错误</string>
+    <string name="two_pwd_no_match_please_enter_again">两次输入的新密码不一致,请重新输入</string>
+    <string name="is_save_please_wait_ellipsis">正在保存，请稍候&#8230;</string>
+    <string name="pwd_changed_success">密码修改成功</string>
+    <string name="confirm_exit_current_account">是否确认退出当前帐号？</string>
+    <string name="warm_prompt">温馨提示</string>
+    <string name="updated_latest_version">已更新到最新版本</string>
+    <string name="exit">退出</string>
+    <string name="traffic_statistics">流量统计</string>
+    <string name="version_update">版本更新</string>
+    <string name="suggestion_feedback">意见反馈</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="exception_declare">异常申报</string>
+    <string name="wheather_declare_exception">是否确认申报异常？</string>
+    <string name="delete_tip">删除提示</string>
+    <string name="delete">删除</string>
+    <string name="delete_tip_msg">是否确定要删除当前记录？删除后不可再恢复</string>
+    <!-- UserValidationActivity And UserLoginActivity -->
+    <string name="verification_not_successful">验证未成功</string>
+    <string name="validating_user_elipsis">正在验证用户&#8230;</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="verification_code_sent_failed">验证码发送未成功</string>
+    <string name="verification_code_sent_success_please_check_sms">验证码发送成功，请查看手机短信</string>
+    <string name="sending_verification_code_ellipsis">正在发送验证码&#8230;</string>
+    <string name="please_input_phone_num">请输入手机号码！</string>
+    <string name="phone_number_illegal">电话号码不合法！</string>
+    <string name="please_enter_pwd">请输入密码！</string>
+    <string name="please_enter_4_15_valid_pwd">请输入4&#8211;15位有效密码！</string>
+    <string name="login_abnormal_please_retry_later">登录出现异常，请稍候重试</string>
+    <string name="login_failed_please_retry_after_confirm_account_pwd">登录未成功，请确认账号和密码后重试</string>
+    <string name="logoff_notification">logoff_notification</string>
+    <string name="restart_login">重新登录</string>
+    <string name="network_busy_please_try_again_later">网络繁忙，请稍后重试</string>
+    <string name="please_fill_you_phone_num">请填写您的手机号码！</string>
+    <string name="please_input_you_phone_num">请输入您的手机号</string>
+    <string name="please_input_pwd">请输入密码</string>
+    <string name="read_agree_agreement">已阅读并同意该协议</string>
+    <string name="regist_account">注册帐号</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="login">登录</string>
+    <string name="scan">浏览</string>
+    <string name="is_landing">正在登陆&#8230;</string>
+    <!-- Log -->
+    <string name="opreation_log">操作日志</string>
+    <string name="is_upload_opreation_log">是否上传操作日志？</string>
+    <string name="operation_log_upload_success">操作日志上传成功</string>
+    <string name="operation_log_upload_failed">操作日志上传失败</string>
+    <string name="not_get_gps_location_tip_msg">硬件gps未获取到有效定位信息，gpsLocation is null.(Remark:在LocationServerUtils.java中)</string>
+    <string name="log_cache_clearup_success">日志缓存清理成功</string>
+    <string name="gps_location_empty_msg">硬件gps反编译坐标地址信息为 null,latitude:%1$s, lontitude:%2$s</string>
+    <string name="bd_location_fail">百度定位失败</string>
+    <string name="get_location_fail_plese_again">获取位置信息失败，请稍后再试</string>
+    <string name="get_location_fail">获取位置信息失败</string>
+    <string name="base_wifi_empty_fail">获取基站/WiFi信息为空或失败</string>
+
+    <!-- Main -->
+    <string name="clear">清空</string>
+    <string name="set">设置</string>
+    <string name="about">关于</string>
+    <string name="clear_tip">清空提示</string>
+    <string name="sure_you_want_empty_draftbox">是否确定要清空草稿箱？</string>
+    <!-- Home  Page -->
+    <string name="i_want_work_off">我要下班</string>
+    <string name="i_want_work_on">我要上班</string>
+    <string name="working">上班中</string>
+    <string name="worked">下班啦</string>
+    <string name="work_off_tip">下班提示</string>
+    <string name="work_on_tip">上班提示</string>
+    <string name="system_tip">系统提示</string>
+    <string name="pro_confirm_work_off">亲，确认下班吗？</string>
+    <string name="pro_confirm_work_on">亲，确认上班吗？</string>
+    <string name="happy_moment">开心一刻</string>
+    <string name="happy_moment_msg">\t\t\t\t在家，我老婆是很听我话的，比如我说：老婆，碗我来刷，你玩去吧，她麻溜的就闪了。做为男人，在家里一定要有威信，老婆不听话怎么行。</string>
+    <string name="next_article">下一条</string>
+    <string name="very_sorry_web_canot_open">非常抱歉，网页无法访问</string>
+    <string name="notify_msg">货运无忧竭诚为您服务</string>
+    <!-- DraftBox Page -->
+    <string name="temporarily_not_found_related_records">暂时未找到相关记录</string>
+    <string name="draft_box_order_num_colon">草稿箱订单号：</string>
+    <string name="clear_up_draft_box">清空草稿箱</string>
+    <string name="draft_box_no_data">草稿箱中暂无数据</string>
+    <!-- Info Page -->
+    <string name="struggling_loading_ellipsis">奋力加载中&#8230;</string>
+    <!-- order Scan -->
+    <string name="please_open_gps">请开启GPS！</string>
+    <!-- CaptureActivity -->
+    <string name="scan_order_result_msg_error">%1$s号长度不是%2$d个字符，不符合长度要求</string>
+    <string name="scan_num_colon">扫描单号：</string>
+    <string name="order_alreader_add">订单已添加</string>
+    <string name="one_time_add_100">一次性最多添加100条</string>
+    <string name="hand_transport_order_num_colon">手输订单号：</string>
+    <string name="please_input_x_num">请输入%1$s号</string>
+    <string name="added_x_list">已添加到%1$s列表中</string>
+    <string name="list_empty">列表为空</string>
+    <string name="please_add_x_commit">请添加%1$s后再提交</string>
+    <string name="order_scan_error_msg">不是正确的二维码格式或%1$s号长度不是%2$s个字符，不符合长度要求</string>
+
+    <!-- OrderExecuteActivity -->
+    <string name="order_execution">订单执行</string>
+    <string name="total_scan_orders_colon">共扫描订单数：</string>
+    <string name="note_only_internal_use_colon">备注(仅供内部使用)：</string>
+    <string name="foreign_customer_service_description_colon">对外客服说明：</string>
+    <string name="milestone_colon">里程碑：</string>
+    <string name="remark_colon">备注：</string>
+    <string name="transfer_information_colon">交接资料：</string>
+    <string name="determine">确定</string>
+    <string name="no_order_msg">当前没有可提交的订单</string>
+    <string name="is_submitted_ellipsis">正在提交&#8230;</string>
+    <string name="save_failed_orders_tip_msg">是否将未成功提交的订单保存到草稿箱中？</string>
+    <string name="delete_order_tip_msg">是否删除已保存的定单？</string>
+    <string name="submission_schedule_x">提交进度:  </string>
+    <string name="submitted_successfully">提交成功</string>
+    <!-- about -->
+    <string name="freight_worryfree_use_agreement">货运无忧使用协议</string>
+    <string name="reight_worryfree_batch_num">Copyright © 2014&#8211;2019 HUOYUNWUYOU</string>
+    <string name="company_name">深圳市上丁网络科技有限公司</string>
+    <string name="company_email">公司邮箱：sd@sdbnet.com</string>
+    <string name="customer_service_telephone">客服电话：</string>
+    <string name="company_url">公司网址：www.sdbnet.com</string>
+    <string name="beta">版本:Beta</string>
+    <!-- Dialog -->
+    <string name="submit">提交</string>
+    <!-- <string name="cancle">取消</string> -->
+    <string name="flush">刷新</string>
+    <!-- Select Projects -->
+    <string name="select_company_project">选择公司项目</string>
+    <string name="no_permission_tip_msg">您暂无操作该项目的权限，请重新选择</string>
+    <!-- Operate Step -->
+    <string name="select_vehicle_model">选择车型</string>
+    <string name="select_vehicle_length">选择车长</string>
+    <string name="select_vehicle_load">选择载重</string>
+    <!-- Vehicle Model -->
+
+    <string name="flat_car">平板车</string>
+    <string name="ladder_truck">爬梯车</string>
+    <string name="wall_car">栏板车</string>
+    <string name="dumper">自卸车</string>
+    <string name="premium_car">高栏车</string>
+    <string name="machinery_car">工程车</string>
+    <string name="van">厢式货车</string>
+    <string name="pallet_carrier">集装箱运输车</string>
+    <string name="market_car_truck">商品运输车</string>
+    <string name="fly_car">飞翼车</string>
+    <string name="thermos_van">保温车</string>
+    <string name="refrigerator_car">冷藏车</string>
+    <string name="tanker">罐车</string>
+    <string name="other">其他</string>
+    <!-- Vehicle -->
+    <string name="unlimited">不限</string>
+    <string name="select_vehicle_length_m">选择车长(米)</string>
+    <string name="select_vehicle_load_t">选择载重(吨)</string>
+    <!-- Dilog photo -->
+    <string name="photograph">拍照</string>
+    <string name="select_from_album">从相册选择</string>
+    <string name="loading">加载中....</string>
+    <string name="select_pic">选择照片</string>
+    <!-- report -->
+    <string name="theme_tile">0.20150617情况反馈</string>
+    <string name="theme_colon">主题:</string>
+    <string name="condition_feedback_theme_name">情况反馈主题名称</string>
+    <string name="date_time_colon">日期时间：</string>
+    <string name="place_colon">地点：</string>
+    <string name="accident_explain_colon">事故说明：</string>
+    <string name="accident_explain_msg">\t\t\t\t\t\t\t\t\t\t\t\t起因或目的、时间和地点、对象或范围、经过与方法，以及人员组成等调查本身的情况。</string>
+    <string name="please_input_title">请输入标题</string>
+    <string name="please_select_date">请选择日期</string>
+    <string name="please_explain_msg">请详细描述您遇到的问题</string>
+    <string name="add_pic_colon">添加图片：</string>
+    <!-- <string name="report_exec_list">申报异常列表</string> -->
+    <string name="accident_center">事故中心</string>
+    <string name="accident_report">事故申报</string>
+    <string name="accident_report_upload_success">事故报告上传成功</string>
+    <string name="accident_report_upload_failed">事故报告上传失败</string>
+    <!-- weather -->
+    <string name="cloudy">多云</string>
+    <string name="light_rain">小雨</string>
+    <string name="rain">雨</string>
+    <string name="heavy_rain">大雨</string>
+    <string name="thunder_shower">雷阵雨</string>
+    <string name="sunny">晴</string>
+    <string name="yin">阴</string>
+    <string name="shower">阵雨</string>
+    <string name="fog">雾</string>
+    <string name="hail">冰雹</string>
+    <string name="light_snow">小雪</string>
+    <string name="snow">雪</string>
+    <string name="heavy_snow">大雪</string>
+    <!-- pulltorefresh -->
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <!-- order -->
+    <string name="delete_order_x">删除订单：%s</string>
+    <string name="delete_add_order_x">删除已添加订单：%s</string>
+    <string name="order_scan">订单扫描</string>
+    <string name="auto_code_tip_msg">是否重新生成订单？</string>
+    <string name="please_click_colon">请点击：</string>
+    <!--  -->
+    <string name="get_permission_failed">获取权限失败</string>
+    <string name="pop_window_tip_msg">提示：点击窗口外部关闭窗口！</string>
+    <string name="location">位置</string>
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="update_msg_1">最新版本： %1$s \n最新版本已经下载，是否立即更新？\n\n更新内容\n%2$s</string>
+    <string name="update_msg_2">最新版本： %1$s \n新版本大小： %2$s\n\n更新内容\n%3$s</string>
+    <!-- umeng -->
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_fb_contact_info_hint">Email, msn, gtalk, or whatever we can find you.</string>
+    <string name="umeng_fb_contact_update_at">Updated at </string>
+    <string name="umeng_fb_back">Back</string>
+    <string name="umeng_fb_title">Feedback</string>
+    <string name="umeng_fb_contact_title">Contact</string>
+    <string name="umeng_fb_contact_info">Contact Info</string>
+    <string name="umeng_fb_reply_content_hint">I want to tell</string>
+    <string name="umeng_fb_send">Send</string>
+    <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
+    <string name="umeng_fb_reply_date_default">2013-3-12 13:24:00</string>
+
+
+
+    <string name="umeng_fb_powered_by">Powered by</string>
+    <string name="umeng_fb_notification_ticker_text">Got new reply</string>
+    <string name="umeng_fb_notification_content_formatter_single_msg">New reply: %s</string>
+    <string name="umeng_fb_notification_content_formatter_multiple_msg">You received %d new replies from the app developer.</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMUpdateTitle">New version found</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMTargetSize">Target size: </string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMUpdateCheck">2.5.0.20141210</string>
+
+</resources>

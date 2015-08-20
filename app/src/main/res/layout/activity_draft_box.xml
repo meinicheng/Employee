@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/nav" >
+
+        <ImageView
+            android:id="@+id/activity_draft_box_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/dishes_btn_selector" />
+
+        <TextView
+            android:id="@+id/activity_draft_box_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="车队定位"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/activity_draft_box_clear_draft_ll"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home_btn2_bg_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sliding_menu_bt_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:text="@string/clear"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_draft_box_no_record_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|top"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/activity_draft_box_imgNoRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_null" />
+
+        <TextView
+            android:id="@+id/activity_draft_box_tvNoRecordMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/temporarily_not_found_related_records"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!--
+         <ListView
+        android:id="@+id/activity_draft_box_plv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:listSelector="#0fff"
+        android:scrollbars="none" />
+    -->
+
+    <com.sdbnet.hywy.employee.ui.widget.RTPullListView
+        android:id="@+id/activity_draft_box_plv_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:listSelector="#0fff"
+        android:scrollbars="none" />
+    <!-- <include layout="@layout/view_record_null" /> -->
+
+</LinearLayout>
