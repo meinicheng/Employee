@@ -994,12 +994,20 @@ public class TimeUploadService extends Service {
         }
     }
 
-
+    private boolean isAgaginRequest=false;
     private void againRequestBD() {
+        if(!isAgaginRequest){
+            callBackFail();
+            isAgaginRequest=false;
+            return ;
+        }
         if (UtilsAndroid.Set.checkNetState(this)) {
+            isAgaginRequest=true;
             mHandler.sendEmptyMessageDelayed(MSG_AGAIN_REQUEST_BD_LOCATION,
                     DELAY_TIME);
         } else {
+            callBackFail();
+            isAgaginRequest=false;
             Toast.makeText(this, getString(R.string.httpError),
                     Toast.LENGTH_SHORT).show();
         }
@@ -1035,7 +1043,8 @@ public class TimeUploadService extends Service {
                 dealBDLocation(location);
                 flag = true;
             } else {
-                againRequestBD();
+//                againRequestBD();
+                callBackFail();
             }
 
         }

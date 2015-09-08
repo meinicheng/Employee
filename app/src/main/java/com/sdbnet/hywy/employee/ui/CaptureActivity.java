@@ -399,8 +399,8 @@ public class CaptureActivity extends BaseActivity implements Callback,
         mTextScanCount.setText(String.format(getString(R.string.barcode_total),
                 PreferencesUtil.ordtitle, scanList.size()));
         mTextOrderNum.setText(scanList.get(0));
-        mTextOrderNum.setBackgroundResource(R.drawable.bg_line);
-
+//        mTextOrderNum.setBackgroundResource(R.drawable.bg_line);
+        mTextOrderNum.setBackgroundColor(Color.parseColor("#313131"));
     }
 
     /**
@@ -769,7 +769,8 @@ public class CaptureActivity extends BaseActivity implements Callback,
                     getString(R.string.barcode_total),
                     PreferencesUtil.ordtitle, scanList.size()));
             mTextOrderNum.setText(scanList.get(0));
-            mTextOrderNum.setBackgroundResource(R.drawable.bg_line);
+//            mTextOrderNum.setBackgroundResource(R.drawable.bg_line);
+            mTextOrderNum.setBackgroundColor(Color.parseColor("#313131"));
             if (scanList.size() < Constants.Value.SCAN_COUNT) {
                 // 延迟1秒，减少扫描的过分灵敏度
                 handler.sendEmptyMessageDelayed(R.id.restart_preview, 1000);

@@ -92,8 +92,8 @@
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="jpush-sdk-release1.7.5" level="project" />
-    <orderEntry type="library" exported="" name="nineoldandroids-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="Universal-Image-Loader1.9.4" level="project" />
+    <orderEntry type="library" exported="" name="nineoldandroids-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="pushservice-4.0.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.0" level="project" />
@@ -103,8 +103,8 @@
     <orderEntry type="library" exported="" name="umeng-analytics-v5.4.1" level="project" />
     <orderEntry type="library" exported="" name="volley_main" level="project" />
     <orderEntry type="library" exported="" name="android-async-http-1.4.5" level="project" />
-    <orderEntry type="library" exported="" name="umeng-update-v2.5.0" level="project" />
     <orderEntry type="library" exported="" name="BaiduLBS_Android" level="project" />
+    <orderEntry type="library" exported="" name="umeng-update-v2.5.0" level="project" />
     <orderEntry type="library" exported="" name="Android_Location_V1.3.2" level="project" />
   </component>
 </module>

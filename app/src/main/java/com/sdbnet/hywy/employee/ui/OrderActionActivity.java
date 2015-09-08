@@ -39,7 +39,7 @@ import com.sdbnet.hywy.employee.utils.UtilsAndroid;
 import com.sdbnet.hywy.employee.utils.UtilsBean;
 
 public class OrderActionActivity extends BaseActivity implements
-        OnClickListener {
+        OnClickListener,OnItemClickListener {
     private static final String TAG = "OrderActionActivity";
     // private LinearLayout lay_base_action;
     // private LinearLayout lay_sub_action;
@@ -72,6 +72,7 @@ public class OrderActionActivity extends BaseActivity implements
     private String mTitle;
 
     private Button mBtnReport;
+    private Button mBtnThrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +83,7 @@ public class OrderActionActivity extends BaseActivity implements
         // UtilsAndroid.Set.openMobileNetWork(this);
         UtilsAndroid.Set.openGPSSettings(this);
         initBaseData();
-        initControls();
+        initUI();
     }
 
     private void initBaseData() {
@@ -123,11 +124,16 @@ public class OrderActionActivity extends BaseActivity implements
     /**
      * 初始化控件
      */
-    private void initControls() {
+    private void initUI() {
         mBtnReport = (Button) findViewById(R.id.activity_action_base_report_add_btn);
         mBtnReport.setOnClickListener(this);
         if (checkPermissions()) {
             mBtnReport.setVisibility(View.VISIBLE);
+        }
+        mBtnThrid= (Button) findViewById(R.id.activity_action_base_report_third_btn);
+        mBtnThrid.setOnClickListener(this);
+        if (isThridPermissons()) {
+            mBtnThrid.setVisibility(View.VISIBLE);
         }
         // This Version
         mBtnReport.setVisibility(View.VISIBLE);// ????/
@@ -145,66 +151,67 @@ public class OrderActionActivity extends BaseActivity implements
         UtilsAndroid.UI.setListViewHeightBasedOnChildren(mListView);
         mAdapter.notifyDataSetChanged();
 
-        mListView.setOnItemClickListener(new OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-
-                ExecuteAction action = (ExecuteAction) parent.getAdapter()
-                        .getItem(position);
-                Log.i(TAG, action + "<" + position + "<" + id);
-                String viewAction = action.getAction();
-
-                switch (mCurrentLevel) {
-                    case LEVEL_FIRST:
-                        firstAction = viewAction;// 一级菜单 点击后的 action;
-                        mFirstBtnName = action.getBtnname();// 一级菜单 点击后的 name;
-                        getSecondData(viewAction);
-                        PreferencesUtil.putValue(PreferencesUtil.KEY_STEPS,
-                                action.getAction());
-                        if (mCurrentExecuteAction.size() == 0) {
-                            mCurrentExecuteAction = mFirstActionList;
-                            executeAction(view, mFirstActionList.get(0).getBtnname());
-                        } else {
-                            mCurrentLevel = LEVEL_SECOND;
-                            UtilsAndroid.UI
-                                    .setListViewHeightBasedOnChildren(mListView);
-                            mAdapter.notifyDataSetChanged();
-                            mTextTitle.setText(action.getBtnname());
-
-                        }
-                        break;
-                    case LEVEL_SECOND:
-                        saveOpSteps(action);
-                        // sccondAction = viewAction;// 二级菜单的 点击后 Action;
-                        // mSecondBtnName = action.getBtnname();
-                        getThridData(viewAction);
-                        if (mCurrentExecuteAction.size() == 0) {
-                            getSecondData(firstAction);
-                            executeAction(view, mSecondActionList.get(0).getBtnname());
-                        } else {
-                            // mCurrentExecuteAction = mThirdActionList;
-                            mCurrentLevel = LEVEL_THIRD;
-                            UtilsAndroid.UI
-                                    .setListViewHeightBasedOnChildren(mListView);
-                            mAdapter.notifyDataSetChanged();
-                            mTextTitle.setText(action.getBtnname());
-
-                        }
-
-                        break;
-                    case LEVEL_THIRD:
-                        // thirdAction = viewAction;//三级菜单的 点击后 Action;
-                        saveOpSteps(action);
-                        executeAction(view, mThirdActionList.get(0).getBtnname());
-                        break;
-                    default:
-                        break;
-                }
-
-            }
-        });
+        mListView.setOnItemClickListener(this);
+//        mListView.setOnItemClickListener(new OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view,
+//                                    int position, long id) {
+//
+//                ExecuteAction action = (ExecuteAction) parent.getAdapter()
+//                        .getItem(position);
+//                Log.i(TAG, action + "<" + position + "<" + id);
+//                String viewAction = action.getAction();
+//
+//                switch (mCurrentLevel) {
+//                    case LEVEL_FIRST:
+//                        firstAction = viewAction;// 一级菜单 点击后的 action;
+//                        mFirstBtnName = action.getBtnname();// 一级菜单 点击后的 name;
+//                        getSecondData(viewAction);
+//                        PreferencesUtil.putValue(PreferencesUtil.KEY_STEPS,
+//                                action.getAction());
+//                        if (mCurrentExecuteAction.size() == 0) {
+//                            mCurrentExecuteAction = mFirstActionList;
+//                            executeAction(view, mFirstActionList.get(0).getBtnname());
+//                        } else {
+//                            mCurrentLevel = LEVEL_SECOND;
+//                            UtilsAndroid.UI
+//                                    .setListViewHeightBasedOnChildren(mListView);
+//                            mAdapter.notifyDataSetChanged();
+//                            mTextTitle.setText(action.getBtnname());
+//
+//                        }
+//                        break;
+//                    case LEVEL_SECOND:
+//                        saveOpSteps(action);
+//                        // sccondAction = viewAction;// 二级菜单的 点击后 Action;
+//                        // mSecondBtnName = action.getBtnname();
+//                        getThridData(viewAction);
+//                        if (mCurrentExecuteAction.size() == 0) {
+//                            getSecondData(firstAction);
+//                            executeAction(view, mSecondActionList.get(0).getBtnname());
+//                        } else {
+//                            // mCurrentExecuteAction = mThirdActionList;
+//                            mCurrentLevel = LEVEL_THIRD;
+//                            UtilsAndroid.UI
+//                                    .setListViewHeightBasedOnChildren(mListView);
+//                            mAdapter.notifyDataSetChanged();
+//                            mTextTitle.setText(action.getBtnname());
+//
+//                        }
+//
+//                        break;
+//                    case LEVEL_THIRD:
+//                        // thirdAction = viewAction;//三级菜单的 点击后 Action;
+//                        saveOpSteps(action);
+//                        executeAction(view, mThirdActionList.get(0).getBtnname());
+//                        break;
+//                    default:
+//                        break;
+//                }
+//
+//            }
+//        });
     }
 
     private boolean checkPermissions() {
@@ -227,6 +234,11 @@ public class OrderActionActivity extends BaseActivity implements
             }
         }
         return false;
+    }
+    private boolean isThridPermissons() {
+        // 检查权限
+
+        return true;
     }
 
     private void getActionData(int level, String action) {
@@ -440,14 +452,17 @@ public class OrderActionActivity extends BaseActivity implements
                 onBackPressed();
                 break;
             case R.id.activity_action_base_report_add_btn:
-                startScan();
+                startAccidentScan();
+                break;
+            case R.id.activity_action_base_report_third_btn:
+                startThirdScan();
                 break;
             default:
                 break;
         }
     }
 
-    private void startScan() {
+    private void startAccidentScan() {
         ExecuteAction action = new ExecuteAction();
         action.setBtnname(getString(R.string.accident_report));
         saveOperateLog(mBtnReport.getText().toString());
@@ -455,6 +470,16 @@ public class OrderActionActivity extends BaseActivity implements
                 CaptureActivity.class);
         intent.putExtra(Constants.Feild.KEY_ACTION, action);
         intent.putExtra(FILED_TYPE_FROM, VALUE_FROM_ACCIDENT);
+        startActivity(intent);
+    }
+    private void startThirdScan() {
+//        ExecuteAction action = new ExecuteAction();
+//        action.setBtnname(getString(R.string.accident_report));
+        saveOperateLog(mBtnThrid.getText().toString());
+        Intent intent = new Intent(OrderActionActivity.this,
+                ThridScanActivity.class);
+//        intent.putExtra(Constants.Feild.KEY_ACTION, action);
+//        intent.putExtra(FILED_TYPE_FROM, VALUE_FROM_ACCIDENT);
         startActivity(intent);
     }
 
@@ -543,5 +568,60 @@ public class OrderActionActivity extends BaseActivity implements
                     });
         }
         mAutoDialog.show();
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        ExecuteAction action = (ExecuteAction) parent.getAdapter()
+                .getItem(position);
+        Log.i(TAG, action + "<" + position + "<" + id);
+        String viewAction = action.getAction();
+
+        switch (mCurrentLevel) {
+            case LEVEL_FIRST:
+                firstAction = viewAction;// 一级菜单 点击后的 action;
+                mFirstBtnName = action.getBtnname();// 一级菜单 点击后的 name;
+                getSecondData(viewAction);
+                PreferencesUtil.putValue(PreferencesUtil.KEY_STEPS,
+                        action.getAction());
+                if (mCurrentExecuteAction.size() == 0) {
+                    mCurrentExecuteAction = mFirstActionList;
+                    executeAction(view, mFirstActionList.get(0).getBtnname());
+                } else {
+                    mCurrentLevel = LEVEL_SECOND;
+                    UtilsAndroid.UI
+                            .setListViewHeightBasedOnChildren(mListView);
+                    mAdapter.notifyDataSetChanged();
+                    mTextTitle.setText(action.getBtnname());
+
+                }
+                break;
+            case LEVEL_SECOND:
+                saveOpSteps(action);
+                // sccondAction = viewAction;// 二级菜单的 点击后 Action;
+                // mSecondBtnName = action.getBtnname();
+                getThridData(viewAction);
+                if (mCurrentExecuteAction.size() == 0) {
+                    getSecondData(firstAction);
+                    executeAction(view, mSecondActionList.get(0).getBtnname());
+                } else {
+                    // mCurrentExecuteAction = mThirdActionList;
+                    mCurrentLevel = LEVEL_THIRD;
+                    UtilsAndroid.UI
+                            .setListViewHeightBasedOnChildren(mListView);
+                    mAdapter.notifyDataSetChanged();
+                    mTextTitle.setText(action.getBtnname());
+
+                }
+
+                break;
+            case LEVEL_THIRD:
+                // thirdAction = viewAction;//三级菜单的 点击后 Action;
+                saveOpSteps(action);
+                executeAction(view, mThirdActionList.get(0).getBtnname());
+                break;
+            default:
+                break;
+        }
     }
 }

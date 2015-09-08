@@ -51,8 +51,8 @@ import com.sdbnet.hywy.employee.utils.UtilsCommon;
 import com.sdbnet.hywy.employee.utils.UtilsJava;
 
 public class AsyncHttpService {
-//	public static final String BASE_URL = "http://182.18.31.50/HYWY";// 正式
-	 public static final String BASE_URL = "http://192.168.1.111:8080/HYWY";
+	public static final String BASE_URL = "http://182.18.31.50/HYWY";// 正式
+//	 public static final String BASE_URL = "http://192.168.1.111:8080/HYWY";
 	// private static final String BASE_URL = "http://172.28.33.1:8080/HYWY";
 	// public static final String BASE_URL = "http://192.168.1.115:8080/HYWY";//
 	// 本地TEST

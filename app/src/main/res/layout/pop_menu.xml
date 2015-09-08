@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popmenu_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="8.0dip"
+    android:paddingLeft="8.0dip"
+    android:paddingRight="8.0dip"
+    android:paddingTop="16.0dip">
+
+    <TextView
+        android:id="@+id/pop_menu_text_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:drawablePadding="3.0dip"
+        android:gravity="center"
+        android:padding="7.0dip"
+        android:text="@string/flash"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+    <TextView
+        android:id="@+id/pop_menu_text_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:drawablePadding="3.0dip"
+        android:gravity="center"
+        android:padding="7.0dip"
+        android:text="@string/switch_mode"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+    <TextView
+        android:id="@+id/pop_menu_text_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+
+        android:drawablePadding="3.0dip"
+        android:gravity="center"
+        android:padding="7.0dip"
+        android:text="@string/add_order"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

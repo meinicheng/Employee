@@ -196,6 +196,11 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".ui.ThridScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name=".ui.OrderExecuteActivity"
             android:exported="false"
             android:screenOrientation="portrait" >

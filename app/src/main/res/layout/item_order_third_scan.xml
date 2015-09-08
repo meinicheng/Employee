@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/item_order_third_code_iv_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/del" />
+
+    <LinearLayout
+        android:layout_toLeftOf="@id/item_order_third_code_iv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/item_order_third_code_tv_bar_code1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+    />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ff4a4a4a" />
+    <TextView
+        android:id="@+id/item_order_third_code_tv_bar_code2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#ff4a4a4a" />
+
+</RelativeLayout>

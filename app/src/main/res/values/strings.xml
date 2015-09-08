@@ -99,7 +99,15 @@
     <string name="image_url">Image Url</string>
 
     <!-- 订单扫描 -->
-
+    <string name="scan_client_msg">请扫描客户订单号</string>
+    <string name="third_scan">第三方扫描</string>
+    <string name="client_order_code">客户端订单号</string>
+    <string name="third_order_code">第三方订单号</string>
+    <string name="switch_mode">切换模式</string>
+    <string name="flash_open">开灯</string>
+    <string name="flash_close">关灯</string>
+    <string name="flash">闪光灯</string>
+    <string name="add_order">添加订单</string>
     <string name="barcode_hint"> 可手动输入%1$s号</string>
     <string name="barcode_record">查看已添加%1$s</string>
     <string name="barcode_total">共扫描%1$s数(最多100条)：%2$d</string>
@@ -263,7 +271,7 @@
     <!-- order Scan -->
     <string name="please_open_gps">请开启GPS！</string>
     <!-- CaptureActivity -->
-    <string name="scan_order_result_msg_error">%1$s号长度不是%2$d个字符，不符合长度要求</string>
+    <string name="scan_order_result_msg_error">%1$s号长度不是%2$s个字符，不符合长度要求</string>
     <string name="scan_num_colon">扫描单号：</string>
     <string name="order_alreader_add">订单已添加</string>
     <string name="one_time_add_100">一次性最多添加100条</string>
@@ -411,7 +419,6 @@
     <string name="umeng_fb_send">Send</string>
     <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
     <string name="umeng_fb_reply_date_default">2013-3-12 13:24:00</string>
-
 
 
     <string name="umeng_fb_powered_by">Powered by</string>
